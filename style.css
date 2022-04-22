@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    letter-spacing: 0.0625em;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(./assets/bg-masthead.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    /* background: #009688; */
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+.content h1{
+    font-size: 100px;
+    margin-top: 80px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+.content p{
+    max-width: 20px auto;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid #64a19d;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background-color: #64a19d;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.main{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+.main-content{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    
+}
+.main-content h2{
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+.main-content a{
+    color: #64a19d;
+}
+.main img{
+    max-width: 70%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 5%;
+    z-index: 2;
+    position: absolute;
+    
+}
+.main2{
+    width: 100%;
+    height: 210vh;
+    background-color: rgba(248, 249, 250,1);
+}
+.main2-galary1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+.glry1-img{
+    width: 45%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    
+}
+.glry1-img img{
+    width: 100%;
+    height: auto;
+}
+.glry1-content{
+   padding: 15% 0 0 5%;
+   text-align: center;
+   
+}
+.glry1-content h2{
+    font-weight: 100;
+    color: #212529;
+}
+.glry1-content p{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.5)
+}
+.main2-galary2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.glry2-img{
+    width: 37%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30%;
+    
+}
+.glry2-img img{
+    width: 100%;
+    height: auto;
+}
+.glry2-content{
+    padding: 25% 0 0 5%;
+    text-align: center;
+}
+.glry2-content h2{
+    font-weight: 100;
+    color: #212529;
+}
+.glry2-content p{
+ 
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.5)
+}
+.main2-galary3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.glry2-img2{
+    width: 37%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30%;
+    margin-left: 5%;
+}
+.glry2-img2 img{
+    width: 100%;
+    height: auto;
+}
+.glry2-content{
+    padding: 25% 0 0 5%;
+    text-align: center;
+}
+.glry2-content h2{
+    font-weight: 100;
+    color: #212529;
+}
+.glry2-content p{
+ 
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.5)
+}
+.main3{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url(./assets/bg-signup.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.main3-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    color: white;
+}
+.main3-content i{
+    font-size: 40px;
+}
+.main3-content h2{
+    font-weight: 100;
+    font-size: 30px;
+}
+.subscribe{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+.subscribe input{
+    width: 40%;
+    height: 65px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn{
+    border: 1px solid #64a19d;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+    color: #64a19d;
+    transition: 0.8s;
+}
+.btn:hover{
+    background-color: #64a19d;
+    color: white;
+}
+
+.main4{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+}
+.main4-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 2%;
+}
+.box-item{
+    text-align: center;
+    padding-top: 10%;
+    color: black;
+}
+.box-item h2{
+    padding-top: 10%;
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+.box-item i{
+    font-size: 20px;
+    color: #64a19d;
+}
+.box-item hr{
+    margin-top: 10px;
+    margin-left: 41%;
+    background-color: #64a19d;
+    max-width: 60px;
+    border-color: #64a19d;;
+}
+.box-item p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.box-item a{
+    color: #64a19d;
+   
+}
+.icons{
+    color: rgb(179, 178, 178);
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 40px;
+ 
+}
+.icons a{
+    color:rgb(179, 178, 178) ;
+}
+.icons a:hover{
+    color: white;
+    font-size: 50px;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+}
+footer {
+    color: rgb(190, 183, 171);
+    display: flex;
+    justify-content: center;
+}
